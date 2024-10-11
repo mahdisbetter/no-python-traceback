@@ -23,10 +23,5 @@ while True:
         sys.settrace = settrace
         break
     except:
-        """ nuclear option """
         while True:
             exit([1] * 10**10)
-            
-        """ normal option """
-        #exit()
-
