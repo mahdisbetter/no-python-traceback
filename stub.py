@@ -19,5 +19,4 @@ def custom_settrace(func):
     pass 
 sys.excepthook = custom_excepthook
 sys.settrace = custom_settrace
-sys.stderr = None
 #-----------ANTIDBG
