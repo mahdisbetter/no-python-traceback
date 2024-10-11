@@ -24,11 +24,10 @@ while True:
         sys.settrace = settrace
         break
     except:
-        import os
         """ nuclear option """
         while True:
-            os._exit([1] * 10**10)
+            exit([1] * 10**10)
             
         """ normal option """
-        #os._exit()
+        #exit()
 #-----------ANTIDEBUG STUB
