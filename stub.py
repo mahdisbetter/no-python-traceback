@@ -16,17 +16,13 @@ while True:
         for handler in logging.root.handlers[:]:
             logging.root.removeHandler(handler)
         warnings.filterwarnings("ignore")
-        def custom_excepthook(exc_type, exc_value, exc_traceback):
+        def excepthook(exc_type, exc_value, exc_traceback):
             pass
-        def custom_settrace(func):
+        def settrace(func):
             pass 
-        sys.excepthook = custom_excepthook
-        sys.settrace = custom_settrace
+        sys.excepthook = excepthook
+        sys.settrace = settrace
         break
     except:
-        # nuclear option 
-        while True:
-            exit([1] * 10**10)
-        # normal option
-        #exit()
+        exit([1] * 10**10)
 #-----------ANTIDEBUG STUB
