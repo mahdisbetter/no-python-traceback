@@ -1,4 +1,3 @@
-#-----------ANTIDEBUG STUB
 while True:
     try:
         import sys
@@ -30,4 +29,4 @@ while True:
             
         """ normal option """
         #exit()
-#-----------ANTIDEBUG STUB
+
