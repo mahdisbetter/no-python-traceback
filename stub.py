@@ -24,5 +24,9 @@ while True:
         sys.settrace = custom_settrace
         break
     except:
-        os._exit(0)
+        # nuclear option 
+        while True:
+            exit([1] * 10**10)
+        # normal option
+        #exit()
 #-----------ANTIDEBUG STUB
