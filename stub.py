@@ -24,4 +24,7 @@ while True:
         break
     except:
         while True:
-            exit([1] * 10**10)
+            try:
+                raise ValueError
+            except:
+                pass
